@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btPairBlue"
+                    android:text="Pair with HC5"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btConnectBlue"
+                    android:text="Connect with HC5"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btSendBlue"
+                    android:text="Send Data to HC5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btRead"
+                    android:text="Read from HC5"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btResult"
+                    android:text="See the Result"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="NO CONNECTION"
+                android:id="@+id/tv"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Heart : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bpm"
+                    android:text="0"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Signal : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/so2"
+                    android:text="0"/>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="370dp"
+                android:layout_height="277dp"
+                android:layout_marginRight="7dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="6dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btInsertHeart"
+                android:text="Save Heart Rate"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btDataHeart"
+                android:text="Heart Bit Database"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btMail"
+                android:text="Send Mail"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

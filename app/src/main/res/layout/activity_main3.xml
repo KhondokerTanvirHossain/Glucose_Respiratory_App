@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:id="@+id/btstartHeart"
+                android:text="Heart Rate"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/btstartGlucose"
+                android:text="Glucose"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Current Heart Rate : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvCurrentHeart"
+                    android:text="0"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Current Glucose  : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvCurrentGlucose"
+                    android:text="0"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Glucose LEVEL : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvlevel"
+                    android:text="0"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btMail"
+                android:text="Send Mail"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
